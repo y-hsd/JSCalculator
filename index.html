@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <title>電卓</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <!--計算結果を出力する場所 -->
+      <input type="text" value="0" id="result">
+      <!--数値と演算子のボタン-->
+      <div class="row">
+        <input type="button" value="7" onButtonClick="calc_Value(7)" class="num_btn">
+        <input type="button" value="8" onclick="calc_Value(8)" class="num_btn">
+        <input type="button" value="9" onclick="calc_Value(9)" class="num_btn">
+        <input type="button" value="÷" onclick="calc_Value('/')" class="num_btn">
+      </div>
+      <div class="row">
+        <input type="button" value="4" onclick="calc_Value(4)" class="num_btn">
+        <input type="button" value="5" onclick="calc_Value(5)" class="num_btn">
+        <input type="button" value="6" onclick="calc_Value(6)" class="num_btn">
+        <input type="button" value="-" onclick="calc_Value('-')" class="num_btn">
+      </div>
+      <div class="row">
+        <input type="button" value="1" onclick="calc_Value(1)" class="num_btn">
+        <input type="button" value="2" onclick="calc_Value(2)" class="num_btn">
+        <input type="button" value="3" onclick="calc_Value(3)" class="num_btn">
+        <input type="button" value="+" onclick="calc_Value('+')" class="num_btn">
+      </div>
+      <div class="row">
+        <input type="button" value="0" onclick="calc_Value(0)" class="num_btn">
+        <input type="button" value="." onclick="calc_Period()" class="num_btn">
+        <input type="button" value="×" onclick="calc_Value('*')" class="num_btn">
+        <input type="button" value="=" onclick="calc_Equal('=')" class="num_btn">
+      </div>
+      
+    </div>
+    <script type="text/javascript" src="./calc.js"></script>
+  </body>
+</html>

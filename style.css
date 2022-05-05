@@ -30,7 +30,7 @@
   box-sizing: border-box;
 }
 
-.num_btn, #clear, #equal_btn{
+.btn, #clear, #equal_btn{
   width: 60px;
   height: 30px;
   text-align: center;
@@ -39,5 +39,11 @@
   cursor: pointer;
   margin: 5px;
   box-sizing: border-box;
+  float: left;
+}
+
+.long{
+    width: 130px;
+    height:30px;
 }
 

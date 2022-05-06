@@ -9,7 +9,9 @@
   <body>
     <div class="container">
       <!--計算結果を出力する場所 -->
-      <input readonly type="text" value="0" id="result">
+        <tr>
+          <td><div id ="result" readonly type="text">0</div></td> 
+        </tr>
       <!--数値と演算子のボタン-->
       <div class="row">
         <tr>
@@ -38,8 +40,8 @@
       <div class="row">
         <tr>
           <td><button onclick="click_num(this)" class="btn">0</button></td>
-          <td><button onclick="click_num(this)" class="btn">00</button></td>
-          <td><button onclick="click_num(this)" class="btn">.</button></td>
+          <td><button onclick="dbzero(this)" class="btn">00</button></td>
+          <td><button onclick="click_point(this)" class="btn">.</button></td>
           <td><button onclick="calculate(this)" class="btn">/</button></td>
         </tr>
       </div>
